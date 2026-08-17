@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.hero {
+    background: linear-gradient(135deg, #b30000, #e00000);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.blood-icon {
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.hero p {
+    margin: 15px 0 0;
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    width: 92%;
+    max-width: 1050px;
+    margin: 35px auto;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.section-title > span {
+    font-size: 30px;
+}
+
+.section-title h2 {
+    margin: 0 0 6px;
+    font-size: 27px;
+}
+
+.section-title p {
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+    display: grid;
+    gap: 17px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    background: white;
+    transition: 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #c40000;
+    box-shadow: 0 0 0 3px rgba(195, 0, 0, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.primary-button {
+    width: 100%;
+    padding: 14px 20px;
+    background: #c40000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.primary-button:hover {
+    background: #990000;
+    transform: translateY(-1px);
+}
+
+.search-button {
+    margin-top: 18px;
+}
+
+
+/* =========================
+   MESSAGES
+========================= */
+
+#donorMessage {
+    margin-top: 18px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+/* =========================
+   SEARCH FILTERS
+========================= */
+
+.filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+
+/* =========================
+   DONOR LIST
+========================= */
+
+#donorList {
+    margin-top: 25px;
+}
+
+.donor-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-left: 6px solid #c40000;
+    padding: 22px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    transition: 0.2s;
+}
+
+.donor-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.09);
+}
+
+.donor-card h3 {
+    margin: 0 0 15px;
+    font-size: 21px;
+}
+
+.donor-card p {
+    margin: 9px 0;
+    font-size: 15px;
+}
+
+.donor-card strong {
+    color: #222;
+}
+
+.available {
+    color: #008000;
+    font-weight: bold;
+}
+
+.unavailable {
+    color: #777;
+    font-weight: bold;
+}
+
+
+/* =========================
+   EMPTY MESSAGE
+========================= */
+
+.empty-message {
+    text-align: center;
+    padding: 25px;
+    color: #777;
+    background: #f8f8f8;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   INFORMATION SECTION
+========================= */
+
+.info-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.info-box {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    display: flex;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.info-box > span {
+    font-size: 30px;
+}
+
+.info-box h3 {
+    margin: 0 0 8px;
+}
+
+.info-box p {
+    margin: 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer p:last-child {
+    color: #bbb;
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 800px) {
+
+    .filters {
+        grid-template-columns: 1fr;
+    }
+
+    .info-section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .hero {
+        padding: 35px 15px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .section-title h2 {
+        font-size: 23px;
+    }
+
+    .section-title > span {
+        font-size: 25px;
+    }
+}
